@@ -1,9 +1,9 @@
 #include<iostream>
 
 bool isPrime(int num){
-    for(int i = 2;i<num/2;i++){
-        if(num % i == 0 && num != i)  return false;
-        
+    if(n==1) return false;
+    for(int i = 2;i*i<num;i++){
+        if(num % i == 0 && num != i)  return false; 
     }
     return true;
 }
